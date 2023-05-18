@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculadora de notas</title>
+</head>
+<body>
+    <main>
+        <section class="opcoes">
+            <h2>Tipo da média</h2>
+            <div class="botoes">
+                <button id="btnAritmetica" class="btn selected">Média aritmética</button>
+                <button id="btnPonderada" class="btn">Média ponderada</button>    
+            </div>
+        </section>
+        <secton class="aritmetica" id="sectionForm1">
+            <div class="formulario">
+                <form action="" id="form1">
+                    <label for="nota1">Nota 1</label>
+                    <input type="text" name="nota1" id="Anota1" class="input" required>
+                    <label for="nota2">Nota 2</label>
+                    <input type="text" name="nota2" id="Anota2" class="input" required>
+                    <label for="nota3">Nota 3</label>
+                    <input type="text" name="nota3" id="Anota3" class="input" required>
+                    <label for="nota4">Nota 4</label>
+                    <input type="text" name="nota4" id="Anota4" class="input" required>
+                    <label for="nota5">Nota 5</label>
+                    <input type="text" name="nota5" id="Anota5" class="input" required>
+                    <button type="submit" class="btn">Enviar notas</button>
+                </form>
+            </div>
+        </secton>
+        <section class="ponderada" id="sectionForm2" style="display: none;">
+            <div class="formulario">
+                <form action="" id="form2">
+                    <label for="nota1">Nota 1</label>
+                    <div class="pesado">
+                        <input type="text" name="nota1" id="Pnota1" class="input" required>
+                        <input type="text" name="peso1" id="peso1" placeholder="Peso" class="pso input" required>    
+                    </div>
+                    <label for="nota2">Nota 2</label>
+                    <div class="pesado">
+                        <input type="text" name="nota2" id="Pnota2" class="input" required>
+                        <input type="text" name="peso2" id="peso2" placeholder="Peso" class="pso input" required>    
+                    </div>
+                    <label for="nota3">Nota 3</label>
+                    <div class="pesado">
+                        <input type="text" name="nota3" id="Pnota3" class="input" required>
+                        <input type="text" name="peso3" id="peso3" placeholder="Peso" class="pso input" required>    
+                    </div>
+                    <label for="nota4">Nota 4</label>
+                    <div class="pesado">
+                        <input type="text" name="nota4" id="Pnota4" class="input" required>
+                        <input type="text" name="peso4" id="peso4" placeholder="Peso" class="pso input" required>    
+                    </div>
+                    <label for="nota5">Nota 5</label>
+                    <div class="pesado">
+                        <input type="text" name="nota5" id="Pnota5" class="input" required>
+                        <input type="text" name="peso5" id="peso5" placeholder="Peso" class="pso input" required>    
+                    </div>
+                    <button type="submit" class="btn">Enviar notas</button>
+                </form>
+            </div>
+        </section>
+        <section class="result">
+            <h3 id="resultado"></h3>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
