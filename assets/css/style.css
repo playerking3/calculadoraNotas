@@ -4,12 +4,17 @@
     font-family: 'Comfortaa', cursive;
 }
 
+body {
+    background: #ffffff;
+}
+
 .opcoes{
     padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.15);
+    background: rgb(181, 228, 255);
 }
 
 .botoes{
@@ -31,6 +36,7 @@ button {
  box-shadow: 2px 4px 12px -3px rgba(0,0,0,0.27);
  transition: all 250ms;
  overflow: hidden;
+ margin: 8px;
 }
 
 button::before {
@@ -41,15 +47,11 @@ button::before {
  height: 100%;
  width: 0;
  border-radius: 12px;
- background-color: #212121;
+ background-color: #3bff86;
  z-index: -1;
  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
  transition: all 250ms
-}
-
-button:hover {
- color: #e8e8e8;
 }
 
 button:hover::before {
@@ -64,7 +66,6 @@ button:hover::before {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    gap: 8px;
 }
 
 .formulario {
@@ -105,4 +106,20 @@ button:hover::before {
 
 .aritmetica, .ponderada{
     margin: 12px;
+}
+
+#form2 label, #form1 label{
+    margin-top: 12px;
+}
+
+.erro{
+    color: red;
+}
+
+.sucesso{
+    color: rgb(60, 255, 60);
+}
+
+.exam{
+    color: rgb(69, 69, 255);
 }
